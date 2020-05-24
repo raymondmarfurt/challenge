@@ -28,7 +28,7 @@
 
 ## Run the Calculation
 <code>
-> python consumer_confluent.py <br>
+python consumer_confluent.py <br>
 init consumer<br>
 start reading<br>
 Found 16193 unique users for minute 2016-07-11 13:39:00<br>
