@@ -15,8 +15,9 @@
 | 9 | verify processes are running | `docker-compose ps` | 
 | 10 | create Kafka topic | `docker exec -it bitnami_kafka_1 kafka-topics.sh --create --topic doodle --partitions 1 --replication-factor 1 --bootstrap-server :9092` | 
 | 11 | unzip data (because gunzip not available in docker image) | `gunzip kafka_data/stream.jsonl.gz` | 
-| 12 | load the data | <code> docker exec -ti bitname_kafka_1 bash <br> cat stream.jsonl &#124; kafka-console-producer.sh --broker-list localhost:9092 --topic doodle </code>| 
-| 13 | create topic for result output | `docker exec -it bitnami_kafka_1 kafka-topics.sh --create --topic minuteStats --partitions 1 --replication-factor 1 --bootstrap-server :9092`|
+| 12a | load the data | <code>docker exec -ti bitname_kafka_1 bash</code>| 
+| 12b | load the data | <code>cat stream.jsonl &#124; kafka-console-producer.sh --broker-list localhost:9092 --topic doodle </code>| 
+| 13| create topic for result output | `docker exec -it bitnami_kafka_1 kafka-topics.sh --create --topic minuteStats --partitions 1 --replication-factor 1 --bootstrap-server :9092`|
 
 ### Python Environment
 | Step |Description|Command (arch Linux)|
