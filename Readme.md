@@ -27,7 +27,6 @@
 |3|install high performance kafka client library | `pacman -S librdkafka`|
 
 ## Run the Calculation
-<code>
 python consumer_confluent.py <br>
 init consumer<br>
 start reading<br>
@@ -51,7 +50,6 @@ Found 45471 unique users for minute 2016-07-11 13:55:00<br>
 processing time: 21.095016717910767<br>
 total processed: 1000000/1000000<br>
 message rate: 47404.560677638525 frames per second<br>
-</code>
 
 ## Report
 ### Kafka Setup
