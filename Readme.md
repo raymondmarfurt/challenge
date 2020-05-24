@@ -110,5 +110,6 @@ The data structure is a minimalist JSON structure, containing
   - For scaling, the obvious choice would be to add kafka nodes and increase partitions. Both will require additional logic in the consumer. Besides the architectural changes, we can
     * migrate to Java client and compare performance
     * tune kafka and consumer/producer parameter, e.g. buffer sizes 
+  - File format: JSON for sure is a good choice. From a pure performance perspective, CSV has advantages - but of course many disadvantages. An alternative would be Avro. For Avro, as for other optimized formats, a schema is necessary. This would be beneficial anyway to validate input data. But is not (or hardly?) possible with the suggested input data, which shows variations in its format.
 
 
