@@ -31,8 +31,8 @@
 python consumer_confluent.py <br>
 init consumer<br>
 start reading<br>
-Found 16193 unique users for minute 2016-07-11 13:39:00<br>
-Found 41130 unique users for minute 2016-07-11 13:40:00<br>
+Found 16193 unique users for minute 2016-07-11 13:39:00<br/>
+Found 41130 unique users for minute 2016-07-11 13:40:00<br/>
 Found 47369 unique users for minute 2016-07-11 13:41:00<br>
 Found 49488 unique users for minute 2016-07-11 13:42:00<br>
 Found 47863 unique users for minute 2016-07-11 13:43:00<br>
