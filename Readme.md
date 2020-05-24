@@ -63,12 +63,12 @@ I decided to go with python, because it sped up my code writing for this challen
 ### Initial throughput test
 I did basic message reading from kafka topic (see consumer_non_processing.py; although I used a different client initially), to see pure performance on kafka message consuming, without deserializing and processing of message values.
 
-python consumer_non_processing.py 
-init consumer/producer
-start reading
-processing time: 6.327501535415649
-total processed: 1000000/1000000
-message rate: 158040.26192690773 frames per second
+python consumer_non_processing.py<br> 
+init consumer/producer<br>
+start reading<br>
+processing time: 6.327501535415649<br>
+total processed: 1000000/1000000<br>
+message rate: 158040.26192690773 frames per second<br>
 
 *Thoughts*
 During this test, I see kafka's java process uses about 20% of a Core, the client's python process about 80%. This means that processing is limited by IO, not by CPU. 
@@ -76,12 +76,12 @@ Adding JSON parsing in the next step shows that the java process is at about 8% 
 ### Basic Kafka Client and JSON Parser
 consumer_kafka_python.py is a test implementation to measure throughput with standard python libraries.
 
-python consumer_kafka_python.py 
-init consumer
-start reading
-processing time: 54.371084213256836
-total processed: 1000000
-messages per second: 18392.12909710891
+python consumer_kafka_python.py <br>
+init consumer<br>
+start reading<br>
+processing time: 54.371084213256836<br>
+total processed: 1000000<br>
+messages per second: 18392.12909710891<br>
 
 
 ### Optimizations
